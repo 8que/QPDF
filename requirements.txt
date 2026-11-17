@@ -1,0 +1,11 @@
+# QPDF 运行依赖（Python 3.13 实测通过）
+#
+# 版本钉死的原因，改动前请先做完整回归：
+#   PySide6  必须留在 6.8.x LTS。6.12.0 在本机 import QtCore 直接报
+#            "DLL load failed ... 找不到指定的程序"（见开发笔记），
+#            且 6.8 对 Windows 10 的兼容下限更低，更适合办公室老机器。
+#   PyMuPDF  必须 <2.0。2.x 把 onnxruntime / pymupdf4llm 变成硬依赖，
+#            绿色包会平白多出几百 MB。
+PySide6-Essentials>=6.8,<6.9
+PyMuPDF>=1.24,<2.0
+PyInstaller>=6.11

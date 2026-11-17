@@ -1,0 +1,50 @@
+# ---- Python ----
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# ---- 构建产物 ----
+build/
+dist/
+*.spec
+!QPDF.spec
+!QReport.spec
+
+# ---- 程序运行数据（默认都在程序目录下）----
+output/
+输出/
+备份/
+backups/
+日志/
+config/
+
+# ---- 真实图纸 / 项目文件 / 表格数据：不入库 ----
+samples/
+*.pdf
+*.qpdf
+*.qpdf-*
+*.qpdf.keep
+*.xlsx
+*.xls
+*.csv
+selftest.txt
+
+# ---- 测试脚本与截图：本地保留，不随仓库发布 ----
+tests/
+
+# ---- 内部开发笔记 / 交接文档 ----
+docs/DEV_NOTES.md
+docs/HANDOFF.md
+docs/AI交接简版.md
+docs/测试报告与真机复测清单.md
+
+# ---- 编辑器 ----
+.idea/
+.vscode/
+
+# ---- 重复素材（运行时只用 resources/ 下的版本）----
+/bg.png
+/8que1.png
+/qreport.png
